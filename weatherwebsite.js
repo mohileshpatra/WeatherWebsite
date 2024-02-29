@@ -21,7 +21,7 @@ function fetchWeather(location) {
                 .then(response => response.json())
                 .then(data => {
                         locationElement.textContent = data.name;
-                        temperatureElement.textContent = `${Math.round(data.main.temp)}°C`; // Correct interpolation
+                        temperatureElement.textContent = `${Math.round(data.main.temp)}°C`; 
                         descriptionElement.textContent = data.weather[0].description;
                 })
                 .catch(error => {
