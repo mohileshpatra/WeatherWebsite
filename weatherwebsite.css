@@ -1,0 +1,63 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  background-image: url('./whether.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%; 
+  max-width: 600px; 
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); 
+  border-radius: 20px; 
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); 
+}
+
+h1 {
+  font-size: 36px; 
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+.search-box {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 15px; 
+  border: 1px solid #ccc;
+  border-radius: 20px 0 0 20px; 
+}
+
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 15px 30px; 
+  border-radius: 0 20px 20px 0; 
+  cursor: pointer;
+}
+
+.weather-info {
+  text-align: center;
+}
+
+p {
+  margin: 15px 0; 
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%; 
+  }
+}
